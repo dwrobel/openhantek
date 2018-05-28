@@ -16,6 +16,9 @@
 #define TR(str) QCoreApplication::translate("UploadFirmware", str)
 
 bool UploadFirmware::startUpload(USBDevice *device) {
+    printf("UploadFirmware::startUpload()\n");
+    return LIBUSB_SUCCESS;
+
     if (device->isConnected() || !device->needsFirmware()) return false;
 
     // Open device

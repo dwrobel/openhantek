@@ -57,7 +57,7 @@ void ModelDSO6022BE::applyRequirements(HantekDsoControl *dsoControl) const {
     applyRequirements_(dsoControl);
 }
 
-ModelDSO6022BL::ModelDSO6022BL() : DSOModel(ID, 0x04b5, 0x602a, 0x04b4, 0x602a, "dso6022bl", "DSO-6022BL",
+ModelDSO6022BL::ModelDSO6022BL() : DSOModel(ID, 0x1d50, 0x608e, 0x04b4, 0x602a, "dso6022bl", "DSO-6022BL",
                                             Dso::ControlSpecification(2)) {
     initSpecifications(specification);
 }
